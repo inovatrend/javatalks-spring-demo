@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Users</title>
+</head>
+<body>
+
+<table>
+    <!--/*@thymesVar id="users" type="java.util.List<com.example.javatalks.User>"*/-->
+    <tr th:each="user : ${users}">
+        <td>
+            <a th:href="@{/user/edit(userId=${user.id})}" th:text="${user.username}">User</a>
+        </td>
+        <td>
+            <span th:text="${user.firstName}">First name</span>
+        </td>
+        <td>
+            <span th:text="${user.lastName}">Last name</span>
+        </td>
+
+        <td><a th:href="@{/user/delete(userId=${user.id})}">Delete</a></td>
+
+    </tr>
+</table>
+
+<a th:href="@{/user/edit}">Add new user</a>
+
+
+</body>
+</html>
