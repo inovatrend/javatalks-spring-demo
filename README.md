@@ -3,9 +3,11 @@ Simple Spring boot application demo
 Clone project and navigate to project dir
 
 building: 
+
 ./gradlew build
 
 running (executable jar): 
+
 build/libs/javatalks-0.0.1-SNAPSHOT.jar
 
 
