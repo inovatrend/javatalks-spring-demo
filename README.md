@@ -10,6 +10,9 @@ running (executable jar):
 
 build/libs/javatalks-0.0.1-SNAPSHOT.jar
 
+In browser navigate to http://localhost:8080/user/list
+
+
 
 This demo uses lombok library to generate getter/setter methods in runtime
 To get access to generated getters / setters in compile time IDE plugin sholud be installed and annotation processing enabled
