@@ -1,5 +1,14 @@
 Simple Spring boot application demo
 
+Clone project and navigate to project dir
+
+building:
+./gradlew build
+
+running (executable jar):
+build/libs/javatalks-0.0.1-SNAPSHOT.jar
+
+
 This demo uses lombok library to generate getter/setter methods in runtime
 To get access to generated getters / setters in compile time IDE plugin sholud be installed and annotation processing enabled
 
